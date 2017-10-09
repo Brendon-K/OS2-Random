@@ -6,6 +6,8 @@ table {
 
 .abilitySubtype {
 	text-decoration: underline;
+	font-weight: bold;
+	text-align: center;
 }
 
 td {

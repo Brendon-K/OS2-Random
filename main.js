@@ -1,10 +1,17 @@
 $(document).ready(function() {
+	var appearance;
 	var character;
 
 	$.getJSON('https://raw.githubusercontent.com/Brendon-K/OS2-Random/master/character.json', function(data) {
 		character = data;
 		randLevelOne();
 		setTags();
+	});
+
+	$.getJSON('https://raw.githubusercontent.com/Brendon-K/OS2-Random/master/appearance.json', function(data) {
+		appearance = data;
+		console.log(appearance[0].skinColors);
+		randAppearance();
 	});
 
 	//Set a random element of a 2D array to active
@@ -61,6 +68,32 @@ $(document).ready(function() {
 				console.log("Invalid Race");
 				console.log("Race index: " + n);
 				break;
+		}
+	}
+
+	function randAppearance() {
+		var n;
+		for (var i = 0; i < character.races.length; i++) {
+			if (character.races[i][1] == 1) {
+				//Randomize skin color
+				n = randElement(appearance[i].skinColors);
+				$("#skinColor").text(appearance[i].skinColors[n]);
+				//Randomize face
+				n = randElement(appearance[i].face);
+				$("#face").text(appearance[i].face[n]);
+				//Randomize hair style
+				n = randElement(appearance[i].hairStyle);
+				$("#hairStyle").text(appearance[i].hairStyle[n]);
+				//Randomize hair color
+				n = randElement(appearance[i].hairColor);
+				$("#hairColor").text(appearance[i].hairColor[n]);
+				//Randomize facial features
+				n = randElement(appearance[i].facialFeatures);
+				$("#facialFeatures").text(appearance[i].facialFeatures[n]);
+				//Randomize voice
+				n = randElement(appearance[i].voice);
+				$("#voice").text(appearance[i].voice[n]);
+			}
 		}
 	}
 

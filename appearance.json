@@ -1,0 +1,170 @@
+[
+	{
+		"race": "Dwarf",
+		"skinColors": [
+			"Dune", "Honey", "Walnut", "Shale", "Turf", "Caramel", "Cocoa", "Ebony", "Night", "Fuligin", "Alabaster", "Bamboo", "Bisque", "Shell", "Wheat", "Sable", "Earth", "Nutmeg"
+		],
+		"face": [
+			1, 2, 3, 4, 5, 6, 7
+		],
+		"hairStyle": [
+			1, 2, 3, 4, 5, "None"
+		],
+		"hairColor": [
+			"Cinnamon", "Char", "Lava Cake", "Smoke", "Beast", "Black Grape", "Wheat", "Walnut Cream", "Peach", "Marzipan", "Caramel", "Walnut", "Toffee", "Pumpkin Butter", "Banana Cream", "Bisque", "Chestnut", "Chocolate Cherry", "Strawberry"
+		],
+		"facialFeatures": [
+			1, 2, 3, 4, 5, 6, 7, "None"
+		],
+		"voice": [
+			"Scholar", "Trickster", "Warrior", "Adventurer"
+		]
+	},
+	{
+		"race": "Elf", 
+		"skinColors": [
+			"Dune", "Honey", "Walnut", "Shale", "Turf", "Caramel", "Cocoa", "Ebony", "Night", "Fuligin", "Alabaster", "Bamboo", "Bisque", "Shell", "Wheat", "Sable", "Earth", "Nutmeg"
+		],
+		"face": [
+			1, 2, 3, 4, 5, 6, 7, 8
+		],
+		"hairStyle": [
+			1, 2, 3, 4, 5, 6, 7, 8, "None"
+		],
+		"hairColor": [
+			"Fox", "Cockscomb", "Macaw", "Hawk", "Timberwolf", "Crow", "Gecko", "Peacock", "Ice bear", "Rabbit", "Fawn", "Canary", "Doormouse", "Eagle", "Bear", "Elk", "Coyote", "Sparrow"
+		],
+		"facialFeatures": [
+			"None"
+		],
+		"voice": [
+			"Scholar", "Trickster", "Warrior", "Adventurer"
+		]
+	},
+	{
+		"race": "Human",
+		"skinColors": [
+			"Dune", "Honey", "Walnut", "Shale", "Turf", "Caramel", "Cocoa", "Ebony", "Night", "Fuligin", "Alabaster", "Bamboo", "Bisque", "Shell", "Wheat", "Sable", "Earth", "Nutmeg"
+		],
+		"face": [
+			1, 2, 3, 4, 5, 6, 7, 8, 9, 10
+		],
+		"hairStyle": [
+			1, 2, 3, 4, 5, 6, 7, 8, 9, 10, "None"
+		],
+		"hairColor": [
+			"Lumberjack", "Tutor", "Brewer", "Cooper", "Harvestman", "Jester", "Blacksmith", "Surgeon", "Metallurgist", "Monarch", "Miller", "Weaver", "Squire", "Baker", "Ploughman", "Tailor", "Tanner", "Carpenter"
+		],
+		"facialFeatures": [
+			1, 2, 3, 4, 5, 6, 7, 8, 9, 10, "None"
+		],
+		"voice": [
+			"Scholar", "Trickster", "Warrior", "Adventurer"
+		]
+	},
+	{
+		"race": "Lizard",
+		"skinColors": [
+			"Cerulean", "Papaya", "Desert Sand", "Turquoise", "Wine", "Cobalt", "Still Water", "Vigour", "Hematite", "Cornflower", "Lavender", "Jasmine" 
+		],
+		"face": [
+			1, 2, 3, 4, 5, 6
+		],
+		"hairStyle": [
+			1, 2, 3, 4, 5
+		],
+		"hairColor": [
+			"Peridot", "Zincite", "Padparadscha", "Moonstone", "Smoked Topaz", "Fire Opal", "Almandine", "Rose Alabaster", "Feldspar", "Tanzanite", "Corundum", "Amethyst", "Cobalt", "Light Sapphire", "Heliotrope", "Fluorite", "Still Water", "Chrysolite"
+		],
+		"facialFeatures": [
+			"None"
+		],
+		"voice": [
+			"Scholar", "Trickster", "Warrior", "Adventurer"
+		]
+	},
+	{
+		"race": "Undead Dwarf",
+		"skinColors": [
+			"Ivory", "Snow", "Antiquated", "Marrow", "Decomposed", "Sun-baked", "Charred", "Algae", "Nutmeg", "Oasis"
+		],
+		"face": [
+			1, 2, 3, 4
+		],
+		"hairStyle": [
+			1, 2, 3, 4, "None"
+		],
+		"hairColor": [
+			"Cinnamon", "Char", "Lava Cake", "Smoke", "Black Grape", "Gray", "Wheat", "Walnut Cream", "Peach", "Marzipan", "Caramel", "Walnut", "Toffee", "Pumpkin Butter", "Banana Cream", "Bisque", "Chestnut", "Chocolate Cherry", "Strawberry"
+		],
+		"facialFeatures": [
+			1, 2, 3, 4, 5, 6, "None"
+		],
+		"voice": [
+			"Scholar", "Trickster", "Warrior", "Adventurer"
+		]
+	},
+	{
+		"race": "Undead Elf",
+		"skinColors": [
+			"Ivory", "Snow", "Antiquated", "Marrow", "Decomposed", "Sun-baked", "Charred", "Algae", "Nutmeg", "Oasis"
+		],
+		"face": [
+			1, 2, 3, 4
+		],
+		"hairStyle": [
+			1, 2, "None"
+		],
+		"hairColor": [
+			"Fox", "Cockscomb", "Macaw", "Hawk", "Timberwolf", "Crow", "Gecko", "Peacock", "Gray", "Ice bear", "Rabbit", "Fawn", "Canary", "Doormouse", "Eagle", "Bear", "Elk", "Coyote", "Sparrow"
+		],
+		"facialFeatures": [
+			"None"
+		],
+		"voice": [
+			"Scholar", "Trickster", "Warrior", "Adventurer"
+		]
+	},
+	{
+		"race": "Undead Human",
+		"skinColors": [
+			"Ivory", "Snow", "Antiquated", "Marrow", "Decomposed", "Sun-baked", "Charred", "Algae", "Nutmeg", "Oasis"
+		],
+		"face": [
+			1, 2, 3, 4, 5, 6
+		],
+		"hairStyle": [
+			1, 2, 3, 4, 5, 6, "None"
+		],
+		"hairColor": [
+			"Lumberjack", "Tutor", "Brewer", "Cooper", "Harvestman", "Jester", "Blacksmith", "Surgeon", "Metallurgist", "Monarch", "Gray", "Miller", "Weaver", "Squire", "Baker", "Ploughman", "Tailor", "Tanner", "Carpenter"
+		],
+		"facialFeatures": [
+			1, 2, 3, 4, 5, "None"
+		],
+		"voice": [
+			"Scholar", "Trickster", "Warrior", "Adventurer"
+		]
+	},
+	{
+		"race": "Undead Lizard",
+		"skinColors": [
+			"Ivory", "Snow", "Antiquated", "Marrow", "Decomposed", "Sun-baked", "Charred", "Algae", "Bronze", "Oasis"
+		],
+		"face": [
+			1, 2, 3, 4, 5
+		],
+		"hairStyle": [
+			1, 2, 3, 4, "None"
+		],
+		"hairColor": [
+			"Peridot", "Gray", "Zincite", "Padparadscha", "Moonstone", "Smoked Topaz", "Fire Opal", "Almandine", "Rose Alabaster", "Feldspar", "Tanzanite", "Corundum", "Amethyst", "Cobalt", "Light Sapphire", "Heliotrope", "Fluorite", "Still Water", "Chrysolite"
+		],
+		"facialFeatures": [
+			"None"
+		],
+		"voice": [
+			"Scholar", "Trickster", "Warrior", "Adventurer"
+		]
+	}
+]

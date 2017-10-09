@@ -10,7 +10,6 @@ $(document).ready(function() {
 
 	$.getJSON('https://raw.githubusercontent.com/Brendon-K/OS2-Random/master/appearance.json', function(data) {
 		appearance = data;
-		console.log(appearance[0].skinColors);
 		randAppearance();
 		setTags();
 	});

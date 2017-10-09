@@ -12,6 +12,7 @@ $(document).ready(function() {
 		appearance = data;
 		console.log(appearance[0].skinColors);
 		randAppearance();
+		setTags();
 	});
 
 	//Set a random element of a 2D array to active
@@ -77,22 +78,22 @@ $(document).ready(function() {
 			if (character.races[i][1] == 1) {
 				//Randomize skin color
 				n = randElement(appearance[i].skinColors);
-				$("#skinColor").text(appearance[i].skinColors[n]);
+				character.appearance[0][1] = appearance[i].skinColors[n];
 				//Randomize face
 				n = randElement(appearance[i].face);
-				$("#face").text(appearance[i].face[n]);
+				character.appearance[1][1] = appearance[i].face[n];
 				//Randomize hair style
 				n = randElement(appearance[i].hairStyle);
-				$("#hairStyle").text(appearance[i].hairStyle[n]);
+				character.appearance[2][1] = appearance[i].hairStyle[n];
 				//Randomize hair color
 				n = randElement(appearance[i].hairColor);
-				$("#hairColor").text(appearance[i].hairColor[n]);
+				character.appearance[3][1] = appearance[i].hairColor[n];
 				//Randomize facial features
 				n = randElement(appearance[i].facialFeatures);
-				$("#facialFeatures").text(appearance[i].facialFeatures[n]);
+				character.appearance[4][1] = appearance[i].facialFeatures[n];
 				//Randomize voice
 				n = randElement(appearance[i].voice);
-				$("#voice").text(appearance[i].voice[n]);
+				character.appearance[5][1] = appearance[i].voice[n];
 			}
 		}
 	}
@@ -261,6 +262,15 @@ $(document).ready(function() {
 		}
 	}
 
+	function setAppearanceTags() {
+		$("#skinColor").text(character.appearance[0][1]);
+		$("#face").text(character.appearance[1][1]);
+		$("#hairStyle").text(character.appearance[2][1]);
+		$("#hairColor").text(character.appearance[3][1]);
+		$("#facialFeatures").text(character.appearance[4][1]);
+		$("#voice").text(character.appearance[5][1]);
+	}
+
 	function setAttributeTags() {
 		$("#strength").text(character.attributes[0][1]);
 		$("#finesse").text(character.attributes[1][1]);
@@ -354,6 +364,7 @@ $(document).ready(function() {
 
 	function setTags() {
 		setIdTags();
+		setAppearanceTags();
 		setLevelTag();
 		setAttributeTags();
 		setCombatAbilityTags();
@@ -468,6 +479,19 @@ $(document).ready(function() {
 		load = JSON.parse(load);
 		//load level
 		character.level = load.level;
+		//load appearance
+		//skin color
+		character.appearance[0][1] = load.appearance[0][1];
+		//face
+		character.appearance[1][1] = load.appearance[1][1];
+		//hair style
+		character.appearance[2][1] = load.appearance[2][1];
+		//hair color
+		character.appearance[3][1] = load.appearance[3][1];
+		//facial features
+		character.appearance[4][1] = load.appearance[4][1];
+		//voice
+		character.appearance[5][1] = load.appearance[5][1];
 		//load gender
 		for (var i = 0; i < character.genders.length; i++) {
 			character.genders[i][1] = load.genders[i][1];
@@ -511,6 +535,7 @@ $(document).ready(function() {
 		reset();
 		randLevelOne();
 		randSetLevel();
+		randAppearance();
 		setTags();
 	});
 

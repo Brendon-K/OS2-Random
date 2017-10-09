@@ -395,5 +395,11 @@
         ["Rogue", 0],
         ["Shadowblade", 0],
         ["Wayfarer", 0]
+    ],
+    "instrument": [
+        ["Bansuri", 0],
+        ["Tambura", 0],
+        ["Oud", 0],
+        ["Cello", 0]
     ]
 }

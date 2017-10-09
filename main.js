@@ -486,6 +486,4 @@ $(document).ready(function() {
 		setTags();
 	})
 
-	
-
 })

@@ -19,12 +19,11 @@ td {
 }
 
 div {
-	float: left;
 	padding: .25em;
 }
 
-.character {
-	float: none;
+.miniContainer {
+	float: left;
 }
 
 div * {

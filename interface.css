@@ -1,11 +1,32 @@
 table {
 	border: 0.1em solid black;
 	border-collapse: collapse;
+	width: 12em;
+}
 
+.abilitySubtype {
+	text-decoration: underline;
+}
+
+td {
+	padding: .5em .1em .5em .1em;
 }
 
 .bigDaddyTable {
 	border: 0em;
 	border-collapse: collapse;
 	vertical-align: top;
+}
+
+div {
+	float: left;
+	padding: .25em;
+}
+
+.character {
+	float: none;
+}
+
+div * {
+	padding: .1em;
 }

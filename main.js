@@ -288,6 +288,9 @@ $(document).ready(function() {
 		$("#retribution").text(combatAbilities[14][1]);
 		$("#leadership").text(combatAbilities[15][1]);
 		$("#perserverance").text(combatAbilities[16][1]);
+		$("#weapons").text(combatAbilities[10][1]+combatAbilities[11][1]+combatAbilities[12][1]+combatAbilities[13][1]);
+		$("#defence").text(combatAbilities[14][1]+combatAbilities[15][1]+combatAbilities[16][1]);
+		$("#skills").text(combatAbilities[0][1]+combatAbilities[1][1]+combatAbilities[2][1]+combatAbilities[3][1]+combatAbilities[4][1]+combatAbilities[5][1]+combatAbilities[6][1]+combatAbilities[7][1]+combatAbilities[8][1]+combatAbilities[9][1])
 	}
 
 	function setCivilAbilityTags() {
@@ -298,6 +301,9 @@ $(document).ready(function() {
 		$("#bartering").text(civilAbilities[4][1]);
 		$("#persuasion").text(civilAbilities[5][1]);
 		$("#luckyCharm").text(civilAbilities[6][1]);
+		$("#personality").text(civilAbilities[4][1]+civilAbilities[5][1]+civilAbilities[6][1]);
+		$("#craftsmanship").text(civilAbilities[0][1]+civilAbilities[1][1]);
+		$("#nastyDeeds").text(civilAbilities[2][1]+civilAbilities[3][1]);
 	}
 
 	function setRacialTalentTags() {

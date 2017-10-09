@@ -103,6 +103,12 @@ $(document).ready(function() {
 		["Soldier", 0]
 	];
 
+	var character;
+
+	$.getJSON('https://raw.githubusercontent.com/Brendon-K/OS2-Random/master/character.json', function(data) {
+		character = data;
+	})
+
 	//Set a random element of a 2D array to active
 	function randElement(array) {
 		var n = Math.floor(Math.random() * array.length);
@@ -389,7 +395,7 @@ $(document).ready(function() {
 		}
 	}
 
-	function randLevelUp() {console.log(level);
+	function randLevelUp() {
 		if (level < 50) {
 			level++;
 			allocateAttributes(2);

@@ -25,6 +25,43 @@ $(document).ready(function() {
 		var n = randElement(character.races);
 		character.races[n][1] = 1;
 		$("#race").text(character.races[n][0]);
+
+		//Adjust stats per race
+		switch (n) {
+			//Dwarf
+			case 0:
+				//+1 Sneaking
+				character.civilAbilities[2][1]++;
+				break;
+			//Elf
+			case 1:
+				//+1 Loremaster
+				character.civilAbilities[1][1]++;
+				break;
+			//Human
+			case 2:
+				//+1 Bartering
+				character.civilAbilities[4][1]++;
+				break;
+			//Lizard
+			case 3:
+				//+1 Persuasion
+				character.civilAbilities[5][1]++;
+				break;
+			//Undead Dwarf
+			case 4:
+			//Undead Elf
+			case 5:
+			//Undead Human
+			case 6:
+			//Undead Lizard
+			case 7:
+				break;
+			default:
+				console.log("Invalid Race");
+				console.log("Race index: " + n);
+				break;
+		}
 	}
 
 	//Choose two tags for character creation

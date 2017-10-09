@@ -371,5 +371,13 @@
             "Soldier",
             0
         ]
+    ],
+    "appearance": [
+        ["skinColor", ""],
+        ["face", ""],
+        ["hairStyle", ""],
+        ["hairColor", ""],
+        ["facialFeatures", ""],
+        ["voice", ""]
     ]
 }

@@ -206,6 +206,28 @@ $(document).ready(function() {
 		$("#currentLevel").text(character.level);
 	}
 
+	function setIdTags() {
+		//Set Gender tag
+		for (var i = 0; i < character.genders.length; i++) {
+			if (character.genders[i][1] == 1) {
+				$("#gender").text(character.genders[i][0]);
+			}
+		}
+		//Set Race tag
+		for (var i = 0; i < character.races.length; i++) {
+			if (character.races[i][1] == 1) {
+				$("#race").text(character.races[i][0]);
+			}
+		}
+		//Set Tags tag
+		$("#tags").text("");
+		for (var i = 0; i < character.tags.length; i++) {
+			if (character.tags[i][1] == 1) {
+				$("#tags").append(character.tags[i][0] + " ");
+			}
+		}
+	}
+
 	function setAttributeTags() {
 		$("#strength").text(character.attributes[0][1]);
 		$("#finesse").text(character.attributes[1][1]);
@@ -298,6 +320,7 @@ $(document).ready(function() {
 	}
 
 	function setTags() {
+		setIdTags();
 		setLevelTag();
 		setAttributeTags();
 		setCombatAbilityTags();
@@ -369,6 +392,7 @@ $(document).ready(function() {
 	}
 
 	function reset() {
+		character.level = 1;
 		//Reset genders
 		for (var i = 0; i < character.genders.length; i++) {
 			character.genders[i][1] = 0;
@@ -409,7 +433,37 @@ $(document).ready(function() {
 	function loadCharacter() {
 		var load = prompt("Enter character string", "");
 		load = JSON.parse(load);
-		console.log(load);
+		//load level
+		character.level = load.level;
+		//load gender
+		for (var i = 0; i < character.genders.length; i++) {
+			character.genders[i][1] = load.genders[i][1];
+		}
+		//reset races
+		for (var i = 0; i < character.races.length; i++) {
+			character.races[i][1] = load.races[i][1];
+		}
+		//reset attributes
+		for (var i = 0; i < character.attributes.length; i++) {
+			character.attributes[i][1] = load.attributes[i][1];
+		} 
+		//reset Combat Abilities
+		for (var i = 0; i < character.combatAbilities.length; i++) {
+			character.combatAbilities[i][1] = load.combatAbilities[i][1];
+		}
+		//reset Civil Abilities
+		for (var i = 0; i < character.civilAbilities.length; i++) {
+			character.civilAbilities[i][1] = load.civilAbilities[i][1];
+		}
+		//reset Talents
+		for (var i = 0; i < character.talents.length; i++) {
+			character.talents[i][1] = load.talents[i][1];
+		}
+		//reset character tags
+		for (var i = 0; i < character.tags.length; i++) {
+			character.tags[i][1] = load.tags[i][1];
+		}
+		setTags();
 	}
 
 	$(".saveButton").on("click", function() {

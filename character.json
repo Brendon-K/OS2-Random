@@ -379,5 +379,21 @@
         ["hairColor", ""],
         ["facialFeatures", ""],
         ["voice", ""]
+    ],
+    "class": [
+        ["Witch", 0],
+        ["Wizard", 0],
+        ["Battlemage", 0],
+        ["Cleric", 0],
+        ["Conjurer", 0],
+        ["Enchanter", 0],
+        ["Fighter", 0],
+        ["Inquisitor", 0],
+        ["Knight", 0],
+        ["Metamorph", 0],
+        ["Ranger", 0],
+        ["Rogue", 0],
+        ["Shadowblade", 0],
+        ["Wayfarer", 0]
     ]
 }

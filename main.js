@@ -375,7 +375,7 @@ $(document).ready(function() {
 	//Randomize all stats for level 1
 	function randLevelOne() {
 		character.level = 1;
-		var attributePoints = 2;
+		var attributePoints = 3;
 		var combatPoints = 2;
 		var civilPoints = 1;
 

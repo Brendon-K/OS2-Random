@@ -117,6 +117,11 @@ $(document).ready(function() {
 		}
 	}
 
+	function randInstrument() {
+		var n = randElement(character.instrument);
+		character.instrument[n][1] = 1;
+	}
+
 	function addTalent() {
 		var valid = false;
 		do {
@@ -272,6 +277,12 @@ $(document).ready(function() {
 				$("#tags").append(character.tags[i][0] + " ");
 			}
 		}
+		//Set Instrument tag
+		for (var i = 0; i < character.instrument.length; i++) {
+			if (character.instrument[i][1] == 1) {
+				$("#instrument").text(character.instrument[i][0]);
+			}
+		}
 	}
 
 	function setAppearanceTags() {
@@ -396,6 +407,7 @@ $(document).ready(function() {
 		randRace();
 		randClass();
 		randTags();
+		randInstrument();
 
 		allocateCombatAbilities(combatPoints);
 		allocateCivilAbilities(civilPoints);
@@ -482,6 +494,10 @@ $(document).ready(function() {
 		for (var i = 0; i < character.tags.length; i++) {
 			character.tags[i][1] = 0;
 		}
+		//reset instrument
+		for (var i = 0; i < character.instrument.length; i++) {
+			character.instrument[i][1] = 0;
+		}
 		$("#tags").text("");
 		$("#talentsOwned").text("");
 	}
@@ -541,6 +557,10 @@ $(document).ready(function() {
 		for (var i = 0; i < character.tags.length; i++) {
 			character.tags[i][1] = load.tags[i][1];
 		}
+		//load instrument
+		for (var i = 0; i < character.instrument.length; i++) {
+			character.instrument[i][1] = load.instrument[i][1];
+		}
 		setTags();
 	}
 
@@ -558,9 +578,6 @@ $(document).ready(function() {
 		randSetLevel();
 		randAppearance();
 		setTags();
-
-
-		$("input[name=\"dataBox\"]").val("werwerwer");
 	});
 
 	$(".levelUpButton").on("click", function() {

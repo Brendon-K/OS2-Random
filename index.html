@@ -6,14 +6,7 @@
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 		<script src="main.js" type="text/javascript" ></script>
 	</head>
-	<button type="button" class="randomButton">Randomize</button><br />
-	<body>
-		<div class="character">
-		<table>
-			<tr>
-				<td>Level:</td>
-				<td>
-					<select id="level">
+	<select id="level">
 						<option value="1">1</option>
 						<option value="2">2</option>
 						<option value="3">3</option>
@@ -63,9 +56,15 @@
 						<option value="47">47</option>
 						<option value="48">48</option>
 						<option value="49">49</option>
-						<option value="50">50</option>
-					</select>
-				</td>
+						<option value="50">50</option></select>
+	<button type="button" class="randomButton">Randomize</button> 
+	<button type="button" class="levelUpButton">Level Up</button><br />
+	<body>
+		<div class="character">
+		<table>
+			<tr>
+				<td>Level:</td>
+				<td><span id="currentLevel"></span></td>
 			</tr>
 			<tr>
 				<td>Gender:</td>

@@ -1,4 +1,6 @@
 $(document).ready(function() {
+	var level = 1;
+
 	var genders = [
 		["Male", 0],
 		["Female", 0]
@@ -261,6 +263,10 @@ $(document).ready(function() {
 		}
 	}
 
+	function setLevelTag() {
+		$("#currentLevel").text(level);
+	}
+
 	function setAttributeTags() {
 		$("#strength").text(attributes[0][1]);
 		$("#finesse").text(attributes[1][1]);
@@ -342,6 +348,8 @@ $(document).ready(function() {
 	}
 
 	function setTalentTags() {
+		$("#talentsOwned").text("");
+		setRacialTalentTags();
 		for (var i = 0; i < talents.length; i++) {
 			//Only add the talent to the talent list if you actually have it
 			if (talents[i][1] == 1) {
@@ -351,6 +359,7 @@ $(document).ready(function() {
 	}
 
 	function setTags() {
+		setLevelTag();
 		setAttributeTags();
 		setCombatAbilityTags();
 		setCivilAbilityTags();
@@ -360,6 +369,7 @@ $(document).ready(function() {
 
 	//Randomize all stats for level 1
 	function randLevelOne() {
+		level = 1;
 		var attributePoints = 2;
 		var combatPoints = 2;
 		var civilPoints = 1;
@@ -375,12 +385,19 @@ $(document).ready(function() {
 	}
 
 	//Randomize a level up
-	function randLevelUp() {
+	function randSetLevel() {
 		for (var i = 1; i < $("#level").val(); i++) {
+			randLevelUp();
+		}
+	}
+
+	function randLevelUp() {console.log(level);
+		if (level < 50) {
+			level++;
 			allocateAttributes(2);
 			allocateCombatAbilities(1);
 			//Add a Civil Ability point at the correct levels
-			switch (i) {
+			switch (level) {
 				case 2:
 				case 6:
 				case 10:
@@ -396,7 +413,7 @@ $(document).ready(function() {
 					break;
 			}
 			//Add a Talent at the correct levels
-			switch (i) {
+			switch (level) {
 				case 3:
 				case 8:
 				case 13:
@@ -445,12 +462,19 @@ $(document).ready(function() {
 		$("#talentsOwned").text("");
 	}
 
-	//Do this code when the button is pressed
 	$(".randomButton").on("click", function() {
 		reset();
 		randLevelOne();
-		randLevelUp();
+		randSetLevel();
 		setTags();
 	});
+
+	$(".levelUpButton").on("click", function() {
+		randLevelUp();
+		setTags();
+	})
+
+	randLevelOne();
+	setTags();
 
 })

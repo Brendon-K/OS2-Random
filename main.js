@@ -103,12 +103,6 @@ $(document).ready(function() {
 		["Soldier", 0]
 	];
 
-	var character;
-
-	$.getJSON('https://raw.githubusercontent.com/Brendon-K/OS2-Random/master/character.json', function(data) {
-		character = data;
-	})
-
 	//Set a random element of a 2D array to active
 	function randElement(array) {
 		var n = Math.floor(Math.random() * array.length);
@@ -466,6 +460,26 @@ $(document).ready(function() {
 		$("#talentsOwned").text("");
 	}
 
+	function saveCharacter() {
+		var character = {level, genders, races, attributes, combatAbilities, civilAbilities, talents, tags};
+		var save = JSON.stringify(character);
+		alert(save);
+	}
+
+	function loadCharacter() {
+		var load = prompt("Enter character string", "");
+		load = JSON.parse(load);
+		console.log(load);
+	}
+
+	$(".saveButton").on("click", function() {
+		saveCharacter();
+	});
+
+	$(".loadButton").on("click", function() {
+		loadCharacter();
+	});
+
 	$(".randomButton").on("click", function() {
 		reset();
 		randLevelOne();
@@ -476,6 +490,7 @@ $(document).ready(function() {
 	$(".levelUpButton").on("click", function() {
 		randLevelUp();
 		setTags();
+		console.log(character);
 	})
 
 	randLevelOne();

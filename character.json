@@ -1,100 +1,375 @@
-[
-	{
-		"level": 1,
-		"genders": [
-			["Male", 0],
-			["Female", 0]
-		],
-		"races": [
-			["Dwarf", 0],
-			["Elf", 0],
-			["Human", 0],
-			["Lizard", 0],
-			["Undead Dwarf", 0],
-			["Undead Elf", 0],
-			["Undead Human", 0],
-			["Undead Lizard", 0]
-		],
-		"attributes": [
-			["Strength", 10],
-			["Finesse", 10],
-			["Intelligence", 10],
-			["Constitution", 10],
-			["Memory", 10],
-			["Wits", 10]
-		],
-		"combatAbilities": [
-			["Warfare", 0],
-			["Huntsman", 0],
-			["Scoundrel", 0],
-			["Pyrokinetic", 0],
-			["Hydrosophist", 0],
-			["Aerotheurge", 0],
-			["Geomancer", 0],
-			["Necromancer", 0],
-			["Summoning", 0],
-			["Polymorph", 0],
-			["Single-Handed", 0],
-			["Two-Handed", 0],
-			["Ranged", 0],
-			["Dual Wielding", 0],
-			["Retribution", 0],
-			["Leadership", 0],
-			["Perserverance", 0]
-		],
-		"civilAbilities": [
-			["Telekinesis", 0],
-			["Loremaster", 0],
-			["Sneaking", 0],
-			["Thievery", 0],
-			["Bartering", 0],
-			["Persuasion", 0],
-			["Lucky Charm", 0]
-		],
-		"talents": [
-			["All Skilled Up", 0, 1], //Level 2
-			["Bigger and Better", 0, 1], //Level 2
-			["Ambidextrous", 0, 0],
-			["Arrow Recovery", 0, 0],
-			["Comeback Kid", 0, 0],
-			["Elemental Affinity", 0, 0],
-			["Escapist", 0, 0],
-			["Far Out Man", 0, 0],
-			["Five-Star Diner", 0, 0],
-			["Glass Cannon", 0, 1], //Incompatible with Lone Wolf
-			["Guerrilla", 0, 0],
-			["Hothead", 0, 0],
-			["Leech", 0, 0],
-			["Living Armor", 0, 0],
-			["Lone Wolf", 0, 1], //Incompatible with Glass Cannon
-			["Mnemonic", 0, 0],
-			["Morning Person", 0, 0],
-			["Opportunist", 0, 0],
-			["Parry Master", 0, 0],
-			["Pet Pal", 0, 0],
-			["Savage Sortilege", 0, 0],
-			["Slingshot", 0, 0],
-			["Stench", 0, 0],
-			["Torturer", 0, 0],
-			["Unstable", 0, 0],
-			["Walk it Off", 0, 0],
-			["What a Rush", 0, 0],
-			["Demon", 0, 1], //Pyrokinetic 1
-			["Duck Duck Goose", 0, 1], //Huntsman 1
-			["Elemental Ranger", 0, 1], //Huntsman 1
-			["Executioner", 0, 1], //Warfare 1
-			["Picture of Health", 0, 1], //Warfare 1
-			["Ice King", 0, 1], //Hydrosophist 1
-			["The Pawn", 0, 1] //Scoundrel 1
-		],
-		"tags": [
-			["Barbarian", 0],
-			["Jester", 0],
-			["Mystic", 0],
-			["Noble", 0],
-			["Outlaw", 0],
-			["Scholar", 0],
-			["Soldier", 0]
-		],
-	}
-]
+{  
+    "level":1,
+    "genders":[  
+        [  
+            "Male",
+            0
+        ],
+        [  
+            "Female",
+            0
+        ]
+    ],
+    "races":[  
+        [  
+            "Dwarf",
+            0
+        ],
+        [  
+            "Elf",
+            0
+        ],
+        [  
+            "Human",
+            0
+        ],
+        [  
+            "Lizard",
+            0
+        ],
+        [  
+            "Undead Dwarf",
+            0
+        ],
+        [  
+            "Undead Elf",
+            0
+        ],
+        [  
+            "Undead Human",
+            0
+        ],
+        [  
+            "Undead Lizard",
+            0
+        ]
+    ],
+    "attributes":[  
+        [  
+            "Strength",
+            10
+        ],
+        [  
+            "Finesse",
+            10
+        ],
+        [  
+            "Intelligence",
+            10
+        ],
+        [  
+            "Constitution",
+            10
+        ],
+        [  
+            "Memory",
+            10
+        ],
+        [  
+            "Wits",
+            10
+        ]
+    ],
+    "combatAbilities":[  
+        [  
+            "Warfare",
+            0
+        ],
+        [  
+            "Huntsman",
+            0
+        ],
+        [  
+            "Scoundrel",
+            0
+        ],
+        [  
+            "Pyrokinetic",
+            0
+        ],
+        [  
+            "Hydrosophist",
+            0
+        ],
+        [  
+            "Aerotheurge",
+            0
+        ],
+        [  
+            "Geomancer",
+            0
+        ],
+        [  
+            "Necromancer",
+            0
+        ],
+        [  
+            "Summoning",
+            0
+        ],
+        [  
+            "Polymorph",
+            0
+        ],
+        [  
+            "Single-Handed",
+            0
+        ],
+        [  
+            "Two-Handed",
+            0
+        ],
+        [  
+            "Ranged",
+            0
+        ],
+        [  
+            "Dual Wielding",
+            0
+        ],
+        [  
+            "Retribution",
+            0
+        ],
+        [  
+            "Leadership",
+            0
+        ],
+        [  
+            "Perserverance",
+            0
+        ]
+    ],
+    "civilAbilities":[  
+        [  
+            "Telekinesis",
+            0
+        ],
+        [  
+            "Loremaster",
+            0
+        ],
+        [  
+            "Sneaking",
+            0
+        ],
+        [  
+            "Thievery",
+            0
+        ],
+        [  
+            "Bartering",
+            0
+        ],
+        [  
+            "Persuasion",
+            0
+        ],
+        [  
+            "Lucky Charm",
+            0
+        ]
+    ],
+    "talents":[  
+        [  
+            "All Skilled Up",
+            0,
+            1
+        ],
+        [  
+            "Bigger and Better",
+            0,
+            1
+        ],
+        [  
+            "Ambidextrous",
+            0,
+            0
+        ],
+        [  
+            "Arrow Recovery",
+            0,
+            0
+        ],
+        [  
+            "Comeback Kid",
+            0,
+            0
+        ],
+        [  
+            "Elemental Affinity",
+            0,
+            0
+        ],
+        [  
+            "Escapist",
+            0,
+            0
+        ],
+        [  
+            "Far Out Man",
+            0,
+            0
+        ],
+        [  
+            "Five-Star Diner",
+            0,
+            0
+        ],
+        [  
+            "Glass Cannon",
+            0,
+            1
+        ],
+        [  
+            "Guerrilla",
+            0,
+            0
+        ],
+        [  
+            "Hothead",
+            0,
+            0
+        ],
+        [  
+            "Leech",
+            0,
+            0
+        ],
+        [  
+            "Living Armor",
+            0,
+            0
+        ],
+        [  
+            "Lone Wolf",
+            0,
+            1
+        ],
+        [  
+            "Mnemonic",
+            0,
+            0
+        ],
+        [  
+            "Morning Person",
+            0,
+            0
+        ],
+        [  
+            "Opportunist",
+            0,
+            0
+        ],
+        [  
+            "Parry Master",
+            0,
+            0
+        ],
+        [  
+            "Pet Pal",
+            0,
+            0
+        ],
+        [  
+            "Savage Sortilege",
+            0,
+            0
+        ],
+        [  
+            "Slingshot",
+            0,
+            0
+        ],
+        [  
+            "Stench",
+            0,
+            0
+        ],
+        [  
+            "Torturer",
+            0,
+            0
+        ],
+        [  
+            "Unstable",
+            0,
+            0
+        ],
+        [  
+            "Walk it Off",
+            0,
+            0
+        ],
+        [  
+            "What a Rush",
+            0,
+            0
+        ],
+        [  
+            "Demon",
+            0,
+            1
+        ],
+        [  
+            "Duck Duck Goose",
+            0,
+            1
+        ],
+        [  
+            "Elemental Ranger",
+            0,
+            1
+        ],
+        [  
+            "Executioner",
+            0,
+            1
+        ],
+        [  
+            "Picture of Health",
+            0,
+            1
+        ],
+        [  
+            "Ice King",
+            0,
+            1
+        ],
+        [  
+            "The Pawn",
+            0,
+            1
+        ]
+    ],
+    "tags":[  
+        [  
+            "Barbarian",
+            0
+        ],
+        [  
+            "Jester",
+            0
+        ],
+        [  
+            "Mystic",
+            0
+        ],
+        [  
+            "Noble",
+            0
+        ],
+        [  
+            "Outlaw",
+            0
+        ],
+        [  
+            "Scholar",
+            0
+        ],
+        [  
+            "Soldier",
+            0
+        ]
+    ]
+}

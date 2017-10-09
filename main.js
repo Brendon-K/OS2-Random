@@ -103,8 +103,6 @@ $(document).ready(function() {
 		["Soldier", 0]
 	];
 
-	//var level = 1;
-
 	//Set a random element of a 2D array to active
 	function randElement(array) {
 		var n = Math.floor(Math.random() * array.length);

@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Random OS2</title>
+		<link href="interface.css" type="text/css" rel="stylesheet">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+		<script src="main.js" type="text/javascript" ></script>
+	</head>
+	<button type="button" class="randomButton">This button does nothing</button><br />
+	<body>
+		<div id="character">
+			<table>
+				<tr>
+					<td>Level:</td>
+					<td>
+						<select id="level">
+							<option value="1">1</option>
+							<option value="2">2</option>
+							<option value="3">3</option>
+							<option value="4">4</option>
+							<option value="5">5</option>
+							<option value="6">6</option>
+							<option value="7">7</option>
+							<option value="8">8</option>
+							<option value="9">9</option>
+							<option value="10">10</option>
+							<option value="11">11</option>
+							<option value="12">12</option>
+							<option value="13">13</option>
+							<option value="14">14</option>
+							<option value="15">15</option>
+							<option value="16">16</option>
+							<option value="17">17</option>
+							<option value="18">18</option>
+							<option value="19">19</option>
+							<option value="20">20</option>
+							<option value="21">21</option>
+							<option value="22">22</option>
+							<option value="23">23</option>
+							<option value="24">24</option>
+							<option value="25">25</option>
+							<option value="26">26</option>
+							<option value="27">27</option>
+							<option value="28">28</option>
+							<option value="29">29</option>
+							<option value="30">30</option>
+							<option value="31">31</option>
+							<option value="32">32</option>
+							<option value="33">33</option>
+							<option value="34">34</option>
+							<option value="35">35</option>
+							<option value="36">36</option>
+							<option value="37">37</option>
+							<option value="38">38</option>
+							<option value="39">39</option>
+							<option value="40">40</option>
+							<option value="41">41</option>
+							<option value="42">42</option>
+							<option value="43">43</option>
+							<option value="44">44</option>
+							<option value="45">45</option>
+							<option value="46">46</option>
+							<option value="47">47</option>
+							<option value="48">48</option>
+							<option value="49">49</option>
+							<option value="50">50</option>
+						</select>
+					</td>
+				</tr>
+				<tr>
+					<td>Gender:</td>
+					<td><span id="gender"></span></td>
+				</tr>
+				<tr>
+					<td>Race:</td>
+					<td><span id="race"></span></td>
+				</tr>
+				<tr>
+					<td>Tag(s):</td>
+					<td><span id="tags"></span></td>
+				</tr>
+			</table>
+		</div>
+		<div id="attributes">
+			<table>
+				<tr>
+					<th colspan="2">Attributes</th>
+				</tr>
+				<tr>
+					<td>Strength:</td>
+					<td><span id="strength"></span></td>
+				</tr>
+				<tr>
+					<td>Finesse:</td>
+					<td><span id="finesse"></span></td>
+				</tr>
+				<tr>
+					<td>Intelligence:</td>
+					<td><span id="intelligence"></span></td>
+				</tr>
+				<tr>
+					<td>Constitution:</td>
+					<td><span id="constitution"></span></td>
+				</tr>
+				<tr>
+					<td>Memory:</td>
+					<td><span id="memory"></span></td>
+				</tr>
+				<tr>
+					<td>Wits:</td>
+					<td><span id="wits"></span></td>
+				</tr>
+			</table>
+		</div>
+		<div id="combatAbilities">
+			<table>
+				<tr>
+					<th>Weapons</th>
+					<th><span id="weapons"></span></th>
+				</tr>
+				<tr>
+					<td>Dual Wielding:</td>
+					<td><span id="dualWielding"></span></td>
+				</tr>
+				<tr>
+					<td>Ranged:</td>
+					<td><span id="ranged"></span></td>
+				</tr>
+				<tr>
+					<td>Single-Handed:</td>
+					<td><span id="singleHanded"></span></td>
+				</tr>
+				<tr>
+					<td>Two-Handed:</td>
+					<td><span id="twoHanded"></span></td>
+				</tr>
+				<tr>
+					<th>Defence</th>
+					<th><span id="defence"></span></th>
+				</tr>
+				<tr>
+					<td>Leadership:</td>
+					<td><span id="leadership"></span></td>
+				</tr>
+				<tr>
+					<td>Perserverance:</td>
+					<td><span id="perserverance"></span></td>
+				</tr>
+				<tr>
+					<td>Retribution:</td>
+					<td><span id="retribution"></span></td>
+				</tr>
+				<tr>
+					<th>Skills</th>
+					<th><span id="skills"></span></th>
+				</tr>
+				<tr>
+					<td>Aerotheurge:</td>
+					<td><span id="aerotheurge"></span></td>
+				</tr>
+				<tr>
+					<td>Geomancer:</td>
+					<td><span id="geomancer"></span></td>
+				</tr>
+				<tr>
+					<td>Huntsman:</td>
+					<td><span id="huntsman"></span></td>
+				</tr>
+				<tr>
+					<td>Hydrosophist:</td>
+					<td><span id="hydrosophist"></span></td>
+				</tr>
+				<tr>
+					<td>Necromancer:</td>
+					<td><span id="necromancer"></span></td>
+				</tr>
+				<tr>
+					<td>Polymorph:</td>
+					<td><span id="polymorph"></span></td>
+				</tr>
+				<tr>
+					<td>Pyrokinetic:</td>
+					<td><span id="pyrokinetic"></span></td>
+				</tr>
+				<tr>
+					<td>Scoundrel:</td>
+					<td><span id="scoundrel"></span></td>
+				</tr>
+				<tr>
+					<td>Summoning:</td>
+					<td><span id="summoning"></span></td>
+				</tr>
+				<tr>
+					<td>Warfare:</td>
+					<td><span id="warfare"></span></td>
+				</tr>
+			</table>
+		</div>
+		<div id="civilAbilities">
+			<table>
+				<tr>
+					<th>Personality</th>
+					<th><span id="personality"></span></th>
+				</tr>
+				<tr>
+					<td>Bartering</td>
+					<td><span id="bartering"></span></td>
+				</tr>
+				<tr>
+					<td>Lucky Charm</td>
+					<td><span id="luckyCharm"></span></td>
+				</tr>
+				<tr>
+					<td>Persuasion</td>
+					<td><span id="persuasion"></span></td>
+				</tr>
+				<tr>
+					<th>Craftsmanship</th>
+					<th><span id="craftsmanship"></span></th>
+				</tr>
+				<tr>
+					<td>Loremaster</td>
+					<td><span id="loremaster"></span></td>
+				</tr>
+				<tr>
+					<td>Telekinesis</td>
+					<td><span id="telekinesis"></span></td>
+				</tr>
+				<tr>
+					<th>Nasty Deeds</th>
+					<th><span id="nastyDeeds"></span></th>
+				</tr>
+				<tr>
+					<td>Sneaking</td>
+					<td><span id="sneaking"></span></td>
+				</tr>
+				<tr>
+					<td>Thievery</td>
+					<td><span id="thievery"></span></td>
+				</tr>
+			</table>
+		</div>
+		<div id="talents">
+			<table>
+				<tr>
+					<th>Talents</th>
+				</tr>
+				<tr>
+					<td id="talentsOwned"></td>
+				</tr>
+			</table>
+		</div>
+	</body>
+</html>

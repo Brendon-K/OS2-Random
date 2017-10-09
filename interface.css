@@ -1,0 +1,11 @@
+table {
+	border: 0.1em solid black;
+	border-collapse: collapse;
+
+}
+
+.bigDaddyTable {
+	border: 0em;
+	border-collapse: collapse;
+	vertical-align: top;
+}

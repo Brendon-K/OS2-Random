@@ -6,6 +6,8 @@ $(document).ready(function() {
 		character = data;
 		randLevelOne();
 		setTags();
+		console.log(character.class[0][0]);
+		console.log(character.class[0][1]);
 	});
 
 	$.getJSON('https://raw.githubusercontent.com/Brendon-K/OS2-Random/master/appearance.json', function(data) {
@@ -69,6 +71,11 @@ $(document).ready(function() {
 				console.log("Race index: " + n);
 				break;
 		}
+	}
+
+	function randClass() {
+		var n = randElement(character.class);
+		character.class[n][1] = 1;
 	}
 
 	function randAppearance() {
@@ -252,6 +259,12 @@ $(document).ready(function() {
 				$("#race").text(character.races[i][0]);
 			}
 		}
+		//Set Class tag
+		for (var i = 0; i < character.class.length; i++) {
+			if (character.class[i][1] == 1) {
+				$("#class").text(character.class[i][0]);
+			}
+		}
 		//Set Tags tag
 		$("#tags").text("");
 		for (var i = 0; i < character.tags.length; i++) {
@@ -381,6 +394,7 @@ $(document).ready(function() {
 
 		randGender();
 		randRace();
+		randClass();
 		randTags();
 
 		allocateCombatAbilities(combatPoints);
@@ -460,6 +474,10 @@ $(document).ready(function() {
 		for (var i = 0; i < character.talents.length; i++) {
 			character.talents[i][1] = 0;
 		}
+		//reset class
+		for (var i = 0; i < character.class.length; i++) {
+			character.class[i][1] = 0;
+		}
 		//reset character tags
 		for (var i = 0; i < character.tags.length; i++) {
 			character.tags[i][1] = 0;
@@ -470,52 +488,56 @@ $(document).ready(function() {
 
 	function saveCharacter() {
 		var save = JSON.stringify(character);
-		alert(save);
+		$("input[name=\"dataBox\"]").val(save);
 	}
 
 	function loadCharacter() {
-		var load = prompt("Enter character string", "");
+		var load = $("input[name=\"dataBox\"]").val();
 		load = JSON.parse(load);
 		//load level
 		character.level = load.level;
 		//load appearance
-		//skin color
+			//skin color
 		character.appearance[0][1] = load.appearance[0][1];
-		//face
+			//face
 		character.appearance[1][1] = load.appearance[1][1];
-		//hair style
+			//hair style
 		character.appearance[2][1] = load.appearance[2][1];
-		//hair color
+			//hair color
 		character.appearance[3][1] = load.appearance[3][1];
-		//facial features
+			//facial features
 		character.appearance[4][1] = load.appearance[4][1];
-		//voice
+			//voice
 		character.appearance[5][1] = load.appearance[5][1];
 		//load gender
 		for (var i = 0; i < character.genders.length; i++) {
 			character.genders[i][1] = load.genders[i][1];
 		}
-		//reset races
+		//load races
 		for (var i = 0; i < character.races.length; i++) {
 			character.races[i][1] = load.races[i][1];
 		}
-		//reset attributes
+		//load attributes
 		for (var i = 0; i < character.attributes.length; i++) {
 			character.attributes[i][1] = load.attributes[i][1];
 		} 
-		//reset Combat Abilities
+		//load Combat Abilities
 		for (var i = 0; i < character.combatAbilities.length; i++) {
 			character.combatAbilities[i][1] = load.combatAbilities[i][1];
 		}
-		//reset Civil Abilities
+		//load Civil Abilities
 		for (var i = 0; i < character.civilAbilities.length; i++) {
 			character.civilAbilities[i][1] = load.civilAbilities[i][1];
 		}
-		//reset Talents
+		//load Talents
 		for (var i = 0; i < character.talents.length; i++) {
 			character.talents[i][1] = load.talents[i][1];
 		}
-		//reset character tags
+		//load class
+		for (var i = 0; i < character.class.length; i++) {
+			character.class[i][1] = load.class[i][1];
+		}
+		//load character tags
 		for (var i = 0; i < character.tags.length; i++) {
 			character.tags[i][1] = load.tags[i][1];
 		}
@@ -536,6 +558,9 @@ $(document).ready(function() {
 		randSetLevel();
 		randAppearance();
 		setTags();
+
+
+		$("input[name=\"dataBox\"]").val("werwerwer");
 	});
 
 	$(".levelUpButton").on("click", function() {

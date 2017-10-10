@@ -11,10 +11,6 @@ $.getJSON('https://raw.githubusercontent.com/Brendon-K/OS2-Random/master/appeara
 });
 
 $(document).ready(function() {
-
-
-
-
 	randLevelOne();
 	randAppearance();
 	setTags();

@@ -1,39 +1,38 @@
+var appearance;
+var character;
+
+//Load the character 
+$.getJSON('https://raw.githubusercontent.com/Brendon-K/OS2-Random/master/character.json', function(data) {
+	character = data;
+});
+
+$.getJSON('https://raw.githubusercontent.com/Brendon-K/OS2-Random/master/appearance.json', function(data) {
+	appearance = data;
+});
+
 $(document).ready(function() {
-	var appearance;
-	var character;
 
-	$.getJSON('https://raw.githubusercontent.com/Brendon-K/OS2-Random/master/character.json', function(data) {
-		character = data;
-		randLevelOne();
-		setTags();
-		console.log(character.class[0][0]);
-		console.log(character.class[0][1]);
-	});
 
-	$.getJSON('https://raw.githubusercontent.com/Brendon-K/OS2-Random/master/appearance.json', function(data) {
-		appearance = data;
-		randAppearance();
-		setTags();
-	});
 
-	//Set a random element of a 2D array to active
+
+	randLevelOne();
+	randAppearance();
+	setTags();
+
+	//return a random value that corresponds to an index in the passed array
 	function randElement(array) {
 		var n = Math.floor(Math.random() * array.length);
 		return n;
 	}
 
-	//Randomize Gender
 	function randGender() {
 		var n = randElement(character.genders);
 		character.genders[n][1] = 1;
-		$("#gender").text(character.genders[n][0]);
 	}
 
-	//Randomize Race
 	function randRace() {
 		var n = randElement(character.races);
 		character.races[n][1] = 1;
-		$("#race").text(character.races[n][0]);
 
 		//Adjust stats per race
 		switch (n) {
@@ -104,16 +103,10 @@ $(document).ready(function() {
 		}
 	}
 
-	//Choose two tags for character creation
 	function randTags() {
 		for (var i = 0; i < 2; i++) {
 			var n = randElement(character.tags);
 			character.tags[n][1] = 1;
-		}
-		for (var i = 0; i < character.tags.length; i++) {
-			if (character.tags[i][1] > 0) {
-				$("#tags").append(character.tags[i][0] + " ");
-			}
 		}
 	}
 
@@ -124,6 +117,7 @@ $(document).ready(function() {
 
 	function addTalent() {
 		var valid = false;
+		//loop until a valid talent is found
 		do {
 			var n = Math.floor(Math.random() * character.talents.length);
 			//Make sure the chosen talent is actually available
@@ -233,7 +227,7 @@ $(document).ready(function() {
 			var n = randElement(character.combatAbilities);
 			character.combatAbilities[n][1]++;
 
-			//Add 1 skill point for polymorph
+			//Add 1 attribute point for polymorph
 			if (n == 9) {
 				allocateAttributes(1);
 			}
@@ -415,13 +409,14 @@ $(document).ready(function() {
 		allocateAttributes(attributePoints);
 	}
 
-	//Randomize a level up
+	//Randomize a character up to the chosen level
 	function randSetLevel() {
 		for (var i = 1; i < $("#level").val(); i++) {
 			randLevelUp();
 		}
 	}
 
+	//Randomize a level up on an existing character
 	function randLevelUp() {
 		if (character.level < 50) {
 			character.level++;
@@ -460,6 +455,7 @@ $(document).ready(function() {
 		}
 	}
 
+	//Set all the values to default
 	function reset() {
 		character.level = 1;
 		//Reset genders

@@ -2,7 +2,6 @@
 	{
 		"ability": "Warfare",
 		"skills": [
-			//"name of skill", memory req, warfare req, huntsman req, etc.
 			["Crippling Blow", 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0],
 			["Battle Stomp", 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0],
 			["Battering Ram", 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0],
@@ -66,7 +65,7 @@
 			["Searing Daggers", 1, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0],
 			["Peach of Mind", 1, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0],
 			["Haste", 1, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0],
-			["Ignition", 1, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0]
+			["Ignition", 1, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0],
 			["Bleed Fire", 1, 0, 0, 0, 1, 0, 0, 0, 0, 0, 1],
 			["Corpse Explosion", 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0],
 			["Sabotage", 1, 0, 0, 1, 1, 0, 0, 0, 0, 0, 0],
@@ -153,7 +152,7 @@
 			["Fortify", 1, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0],
 			["Contamination", 1, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0],
 			["Poison Dart", 2, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0],
-			["Corrosive Touch", 1, 0, 0, 0, 0, 0, 0, 1, 1, 0, 0]
+			["Corrosive Touch", 1, 0, 0, 0, 0, 0, 0, 1, 1, 0, 0],
 			["Oily Carapace", 1, 1, 0, 0, 0, 0, 0, 1, 0, 0, 0],
 			["Turn to Oil", 2, 0, 0, 0, 0, 0, 0, 1, 0, 0, 1],
 			["Venom Coating", 1, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0],

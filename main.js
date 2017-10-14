@@ -177,6 +177,10 @@ $(document).ready(function() {
 							break;
 						//Executioner
 						case 30:
+							//Make sure The Pawn hasn't been taken
+							if (character.talents[33][1] == 1) {
+								break;
+							}
 						//Picture of Health
 						case 31:
 							//Make sure Warfare is at least 1
@@ -193,8 +197,8 @@ $(document).ready(function() {
 							break;
 						//The Pawn
 						case 33:
-							//Make sure Scoundrel is at least 1
-							if (character.combatAbilities[2][1] >= 1) {
+							//Make sure Scoundrel is at least 1 and Executioner hasn't been taken
+							if (character.combatAbilities[2][1] >= 1 && character.talents[30][1] == 0) {
 								valid = true;
 							}
 							break;

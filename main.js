@@ -161,8 +161,8 @@ $(document).ready(function() {
 							break;
 						//Demon
 						case 27:
-							//Make sure Pyrokinetic is at least 1
-							if (character.combatAbilities[3][1] >= 1) {
+							//Make sure Pyrokinetic is at least 1 and Ice King hasn't been taken
+							if (character.combatAbilities[3][1] >= 1 && character.talents[32][1] == 0) {
 								valid = true;
 							}
 							break;
@@ -190,8 +190,8 @@ $(document).ready(function() {
 							break;
 						//Ice King
 						case 32:
-							//Make sure Hydrosophist is at least 1
-							if (character.combatAbilities[4][1] >= 1) {
+							//Make sure Hydrosophist is at least 1 and Demon hasn't been taken
+							if (character.combatAbilities[4][1] >= 1 && character.talents[27][1] == 0) {
 								valid = true;
 							}
 							break;

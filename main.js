@@ -4,12 +4,10 @@ var character;
 //Load the character 
 $.getJSON('https://raw.githubusercontent.com/Brendon-K/OS2-Random/master/character.json', function(data) {
 	character = data;
-	console.log("works");
 });
 
 $.getJSON('https://raw.githubusercontent.com/Brendon-K/OS2-Random/master/appearance.json', function(data) {
 	appearance = data;
-	console.log("works?");
 });
 
 $(document).ready(function() {

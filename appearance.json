@@ -166,5 +166,131 @@
 		"voice": [
 			"Scholar", "Trickster", "Warrior", "Adventurer"
 		]
-	}
+	},
+	{
+		"race": "Beast",
+		"skinColors": [
+			"Dune", "Honey", "Walnut", "Shale", "Turf", "Caramel", "Cocoa", "Ebony", "Night", "Fuligin", "Alabaster", "Bamboo", "Bisque", "Shell", "Wheat", "Sable", "Earth", "Nutmeg"
+		],
+		"face": [
+			1, 2, 3, 4, 5, 6
+		],
+		"hairStyle": [
+			1, 2, 3, 4, 5, "None"
+		],
+		"hairColor": [
+			"Cinnamon", "Char", "Lava Cake", "Smoke", "Beast", "Black Grape", "Wheat", "Walnut Cream", "Peach", "Marzipan", "Caramel", "Walnut", "Toffee", "Pumpkin Butter", "Banana Cream", "Bisque", "Chestnut", "Chocolate Cherry", "Strawberry"
+		],
+		"facialFeatures": [
+			1, 2, 3, 4, 5, 6, "None"
+		],
+		"voice": [
+			"Beast"
+		]
+	},
+	{
+		"race": "Fane",
+		"skinColors": [
+			"Ivory", "Snow", "Antiquated", "Marrow", "Decomposed", "Sun-baked", "Charred", "Algae", "Nutmeg", "Oasis"
+		],
+		"face": [
+			1, 2, 3, 4, 5, 6
+		],
+		"hairStyle": [
+			1, 2, 3, 4, 5, 6, "None"
+		],
+		"hairColor": [
+			"Lumberjack", "Tutor", "Brewer", "Cooper", "Harvestman", "Jester", "Blacksmith", "Surgeon", "Metallurgist", "Monarch", "Gray", "Miller", "Weaver", "Squire", "Baker", "Ploughman", "Tailor", "Tanner", "Carpenter"
+		],
+		"facialFeatures": [
+			1, 2, 3, 4, 5, "None"
+		],
+		"voice": [
+			"Fane"
+		]
+	},
+	{
+		"race": "Ifan ben-Mezd",
+		"skinColors": [
+			"Dune", "Honey", "Walnut", "Shale", "Turf", "Caramel", "Cocoa", "Ebony", "Night", "Fuligin", "Alabaster", "Bamboo", "Bisque", "Shell", "Wheat", "Sable", "Earth", "Nutmeg"
+		],
+		"face": [
+			1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13
+		],
+		"hairStyle": [
+			1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, "None"
+		],
+		"hairColor": [
+			"Lumberjack", "Tutor", "Brewer", "Cooper", "Harvestman", "Jester", "Blacksmith", "Surgeon", "Metallurgist", "Monarch", "Miller", "Weaver", "Squire", "Baker", "Ploughman", "Tailor", "Tanner", "Carpenter"
+		],
+		"facialFeatures": [
+			1, 2, 3, 4, 5, 6, 7, 8, 9, 10, "None"
+		],
+		"voice": [
+			"Ifan ben-mezd"
+		]
+	},
+	{
+		"race": "Lohse",
+		"skinColors": [
+			"Dune", "Honey", "Walnut", "Shale", "Turf", "Caramel", "Cocoa", "Ebony", "Night", "Fuligin", "Alabaster", "Bamboo", "Bisque", "Shell", "Wheat", "Sable", "Earth", "Nutmeg"
+		],
+		"face": [
+			1, 2, 3, 4, 5, 6, 7, 8, 9, 10
+		],
+		"hairStyle": [
+			1, 2, 3, 4, 5, 6, 7, 8, 9, 10, "None"
+		],
+		"hairColor": [
+			"Lumberjack", "Tutor", "Brewer", "Cooper", "Harvestman", "Jester", "Blacksmith", "Surgeon", "Metallurgist", "Monarch", "Miller", "Weaver", "Squire", "Baker", "Ploughman", "Tailor", "Tanner", "Carpenter"
+		],
+		"facialFeatures": [
+			"None"
+		],
+		"voice": [
+			"Lohse"
+		]
+	},
+	{
+		"race": "The Red Prince",
+		"skinColors": [
+			"Cerulean", "Papaya", "Desert Sand", "Turquoise", "Wine", "Cobalt", "Still Water", "Vigour", "Hematite", "Cornflower", "Lavender", "Jasmine" 
+		],
+		"face": [
+			1, 2, 3, 4, 5, 6
+		],
+		"hairStyle": [
+			1, 2, 3, 4, 5
+		],
+		"hairColor": [
+			"Peridot", "Zincite", "Padparadscha", "Moonstone", "Smoked Topaz", "Fire Opal", "Almandine", "Rose Alabaster", "Feldspar", "Tanzanite", "Corundum", "Amethyst", "Cobalt", "Light Sapphire", "Heliotrope", "Fluorite", "Still Water", "Chrysolite"
+		],
+		"facialFeatures": [
+			"None"
+		],
+		"voice": [
+			"The Red Prince"
+		]
+	},
+	{
+		"race": "Sebille", 
+		"skinColors": [
+			"Dune", "Honey", "Walnut", "Shale", "Turf", "Caramel", "Cocoa", "Ebony", "Night", "Fuligin", "Alabaster", "Bamboo", "Bisque", "Shell", "Wheat", "Sable", "Earth", "Nutmeg"
+		],
+		"face": [
+			1, 2, 3, 4, 5, 6, 7, 8
+		],
+		"hairStyle": [
+			1, 2, 3, 4, 5, 6, 7, 8, "None"
+		],
+		"hairColor": [
+			"Fox", "Cockscomb", "Macaw", "Hawk", "Timberwolf", "Crow", "Gecko", "Peacock", "Ice bear", "Rabbit", "Fawn", "Canary", "Doormouse", "Eagle", "Bear", "Elk", "Coyote", "Sparrow"
+		],
+		"facialFeatures": [
+			"None"
+		],
+		"voice": [
+			"Sebille"
+		]
+	},
 ]

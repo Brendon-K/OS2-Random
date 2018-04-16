@@ -4,10 +4,12 @@ var character;
 //Load the character 
 $.getJSON('https://raw.githubusercontent.com/Brendon-K/OS2-Random/master/character.json', function(data) {
 	character = data;
+	console.log("works");
 });
 
 $.getJSON('https://raw.githubusercontent.com/Brendon-K/OS2-Random/master/appearance.json', function(data) {
 	appearance = data;
+	console.log("works?");
 });
 
 $(document).ready(function() {
@@ -60,6 +62,24 @@ $(document).ready(function() {
 			case 6:
 			//Undead Lizard
 			case 7:
+				break;
+			//Beast
+			case 8:
+			//Fane
+			case 9:
+			//Ifan
+			case 10:
+			//Red Prince
+			case 12:
+				//Set to male automatically
+				character.genders[0][1] = 1;
+				break;
+			//Lohse
+			case 11:
+			//Sebille
+			case 13:
+				//Set to female automatically
+				character.genders[1][1] = 1;
 				break;
 			default:
 				console.log("Invalid Race");

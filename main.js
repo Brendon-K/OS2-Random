@@ -2,15 +2,16 @@ var appearance;
 var character;
 
 //Load the character 
-$.getJSON('https://raw.githubusercontent.com/Brendon-K/OS2-Random/master/character.json', function(data) {
+var character_promise = $.getJSON('https://raw.githubusercontent.com/Brendon-K/OS2-Random/master/character.json', function(data) {
 	character = data;
 });
 
-$.getJSON('https://raw.githubusercontent.com/Brendon-K/OS2-Random/master/appearance.json', function(data) {
+var appearance_promise = $.getJSON('https://raw.githubusercontent.com/Brendon-K/OS2-Random/master/appearance.json', function(data) {
 	appearance = data;
 });
 
-$(document).ready(function() {
+
+$.when(character_promise, appearance_promise).done(function() {
 	randLevelOne();
 	randAppearance();
 	setTags();
@@ -599,4 +600,4 @@ $(document).ready(function() {
 		setTags();
 	})
 
-})
+});
